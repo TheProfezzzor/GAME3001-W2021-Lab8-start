@@ -167,6 +167,7 @@
     <ClCompile Include="..\src\Button.cpp" />
     <ClCompile Include="..\src\CloseCombatCondition.cpp" />
     <ClCompile Include="..\src\CollisionManager.cpp" />
+    <ClCompile Include="..\src\Condition.cpp" />
     <ClCompile Include="..\src\DecisionTree.cpp" />
     <ClCompile Include="..\src\LOSCondition.cpp" />
     <ClCompile Include="..\src\MoveToLOS.cpp" />
@@ -180,7 +181,10 @@
     <ClCompile Include="..\src\RadiusCondition.cpp" />
     <ClCompile Include="..\src\SpaceShip.cpp" />
     <ClCompile Include="..\src\Sprite.cpp" />
+    <ClCompile Include="..\src\State.cpp" />
+    <ClCompile Include="..\src\StateMachine.cpp" />
     <ClCompile Include="..\src\Tile.cpp" />
+    <ClCompile Include="..\src\Transition.cpp" />
     <ClCompile Include="..\src\UIControl.cpp" />
     <ClCompile Include="..\src\DisplayObject.cpp" />
     <ClCompile Include="..\src\EndScene.cpp" />

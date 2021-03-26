@@ -204,6 +204,18 @@
     <ClCompile Include="..\src\Patrol.cpp">
       <Filter>StateMachine\Actions</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Condition.cpp">
+      <Filter>StateMachine\CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\State.cpp">
+      <Filter>StateMachine\CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Transition.cpp">
+      <Filter>StateMachine\CoreComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StateMachine.cpp">
+      <Filter>StateMachine\CoreComponents</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\StartScene.h">

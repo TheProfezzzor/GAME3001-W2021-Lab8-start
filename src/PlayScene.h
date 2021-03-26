@@ -10,7 +10,8 @@
 #include "ship.h"
 #include "SpaceShip.h"
 #include "Target.h"
-
+#include "Condition.h"
+#include "StateMachine.h"
 
 class PlayScene : public Scene
 {
@@ -24,8 +25,6 @@ public:
 	virtual void clean() override;
 	virtual void handleEvents() override;
 	virtual void start() override;
-
-	
 
 private:
 	// IMGUI Function
@@ -42,7 +41,15 @@ private:
 	void m_CheckShipLOS(DisplayObject* object);
 
 	// State machine properties
+	Condition* m_pHasLOSCondition;
+	Condition* m_pLostLOSCondition;
+	Condition* m_pIsWithinDetectionRadiusCondition;
+	Condition* m_pIsNotWithinDetectionRadiusCondition;
+	Condition* m_pIsWithinCombatRangeCondition;
+	//Condition* m_pIsNotWithinCombatRangeCondition;
 
+	StateMachine* m_pStateMachine;
+	void m_buildStateMachine();
 };
 
 #endif /* defined (__PLAY_SCENE__) */
