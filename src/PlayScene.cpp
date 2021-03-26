@@ -239,6 +239,7 @@ void PlayScene::m_buildStateMachine()
 	Transition* moveToPlayerTransition = new Transition(m_pHasLOSCondition, moveToPlayerState);
 	Transition* moveToLOSTransition = new Transition(m_pIsWithinDetectionRadiusCondition, moveToLOSState);
 	Transition* attackTransition = new Transition(m_pIsWithinCombatRangeCondition, attackState);
+	// Alex's added Transitions
 	Transition* LOSToPatrolTransition = new Transition(m_pIsNotWithinDetectionRadiusCondition, patrolState);
 	Transition* moveToPlayerToLOSTransition = new Transition(m_pLostLOSCondition, moveToLOSState);
 
